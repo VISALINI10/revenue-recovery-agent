@@ -1,0 +1,7 @@
+event_id,start_offset_min,duration_min,segment_type,segment_value,payment_method,root_cause,elevated_fail_rate,error_codes
+EVT001,180,25,bank,HDFC,upi,bank_downtime,0.55,"['BANK_SERVER_ERROR', 'BANK_UNREACHABLE']"
+EVT002,420,15,gateway,gw_primary,credit_card,gateway_timeout,0.65,"['GATEWAY_TIMEOUT', 'CONN_RESET']"
+EVT003,600,40,bank,AXIS,debit_card,issuer_decline_spike,0.45,"['ISSUER_DECLINED', 'RISK_BLOCK', 'DO_NOT_HONOR']"
+EVT004,800,20,gateway,gw_secondary,netbanking,network_issue,0.5,"['NETWORK_ERROR', 'DNS_FAIL']"
+EVT005,1000,30,bank,SBI,upi,bank_downtime,0.6,"['BANK_SERVER_ERROR', 'BANK_UNREACHABLE']"
+EVT006,1200,35,bank,ICICI,wallet,unclear_mixed_signals,0.55,"['ISSUER_DECLINED', 'RISK_BLOCK', 'DO_NOT_HONOR', 'NETWORK_ERROR', 'DNS_FAIL', 'BANK_SERVER_ERROR', 'BANK_UNREACHABLE']"

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Revenue Recovery Agent — Live Console</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #0B1220;
+    --panel: #121B2E;
+    --panel-2: #0E1626;
+    --border: #22304A;
+    --text: #E7ECF5;
+    --text-dim: #8B96AC;
+    --accent: #3395FF;
+    --green: #35C48D;
+    --amber: #F2A93B;
+    --red: #FF6B6B;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    padding: 32px 40px 60px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  header .track {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .hero {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+  }
+
+  .hero-label {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .hero-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    color: var(--text-dim);
+  }
+
+  .hero-sub b { color: var(--text); }
+
+  .progress-track {
+    width: 260px;
+    height: 6px;
+    background: var(--border);
+    position: relative;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--green);
+    width: 60%;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+
+  .stat {
+    background: var(--panel);
+    padding: 18px 24px;
+  }
+
+  .stat-title {
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  .stat-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .stat-detail {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  section {
+    margin-bottom: 28px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+  }
+
+  .legend-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+    margin-right: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  thead th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-dim);
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody td {
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  td.num { font-family: 'IBM Plex Mono', monospace; text-align: right; }
+  th:nth-child(n+5) { text-align: right; }
+
+  .accent-green { color: var(--green); }
+  .accent-dim { color: var(--text-dim); font-family: 'Inter', sans-serif; font-size: 12px; text-align: right; }
+
+  .bar-cell { display: flex; align-items: center; gap: 8px; min-width: 140px; }
+  .bar-track {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+  }
+  .bar-fill { height: 100%; }
+  .bar-pct {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    width: 34px;
+    text-align: right;
+  }
+
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Revenue Recovery Agent</h1>
+    <div class="subtitle">Payment degradation &rarr; root cause &rarr; recovery action</div>
+  </div>
+  <div class="track">AI REVENUE RECOVERY &middot; RAZORPAY BUILDATHON 2026</div>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="hero-num">Rs.1,309,176</div>
+    <div class="hero-label">recovered of Rs.2,183,156 at risk</div>
+  </div>
+  <div style="text-align:right;">
+    <div class="hero-sub"><b>60.0%</b> recovery rate</div>
+    <div class="progress-track" style="margin-top:10px;"><div class="progress-fill"></div></div>
+  </div>
+</div>
+
+<div class="stat-row">
+  <div class="stat">
+    <div class="stat-title">DETECTION</div>
+    <div class="stat-value">100% recall</div>
+    <div class="stat-detail">6/6 events caught &middot; 100% precision &middot; 0 false alarms</div>
+  </div>
+  <div class="stat">
+    <div class="stat-title">DIAGNOSIS</div>
+    <div class="stat-value">100% accuracy</div>
+    <div class="stat-detail">6/6 correct root causes &middot; 89% avg confidence</div>
+  </div>
+  <div class="stat">
+    <div class="stat-title">RECOVERY</div>
+    <div class="stat-value">6 events handled</div>
+    <div class="stat-detail">Bounded actions &middot; confidence-gated escalation &middot; full audit trail</div>
+  </div>
+</div>
+
+<section>
+  <div class="section-title">
+    <span>24-HOUR FAILURE RATE &middot; ALL SEGMENTS</span>
+    <span><span class="legend-dot"></span>degradation event detected</span>
+  </div>
+  <div class="panel">
+    <svg viewBox="0 0 1040 90" width="100%" height="90"><rect x="0.0" y="34.3" width="20.7" height="55.7" fill="#22304A" /><rect x="21.7" y="46.7" width="20.7" height="43.3" fill="#22304A" /><rect x="43.3" y="31.3" width="20.7" height="58.7" fill="#22304A" /><rect x="65.0" y="39.3" width="20.7" height="50.7" fill="#22304A" /><rect x="86.7" y="42.0" width="20.7" height="48.0" fill="#22304A" /><rect x="108.3" y="32.8" width="20.7" height="57.2" fill="#22304A" /><rect x="130.0" y="20.3" width="20.7" height="69.7" fill="#22304A" /><rect x="151.7" y="48.4" width="20.7" height="41.6" fill="#22304A" /><rect x="173.3" y="39.8" width="20.7" height="50.2" fill="#22304A" /><rect x="195.0" y="36.8" width="20.7" height="53.2" fill="#22304A" /><rect x="216.7" y="32.2" width="20.7" height="57.8" fill="#22304A" /><rect x="238.3" y="40.5" width="20.7" height="49.5" fill="#22304A" /><rect x="260.0" y="38.9" width="20.7" height="51.1" fill="#22304A" /><rect x="281.7" y="45.6" width="20.7" height="44.4" fill="#22304A" /><rect x="303.3" y="25.7" width="20.7" height="64.3" fill="#22304A" /><rect x="325.0" y="31.0" width="20.7" height="59.0" fill="#22304A" /><rect x="346.7" y="37.5" width="20.7" height="52.5" fill="#22304A" /><rect x="368.3" y="32.6" width="20.7" height="57.4" fill="#22304A" /><rect x="390.0" y="46.9" width="20.7" height="43.1" fill="#22304A" /><rect x="411.7" y="22.6" width="20.7" height="67.4" fill="#22304A" /><rect x="433.3" y="28.9" width="20.7" height="61.1" fill="#22304A" /><rect x="455.0" y="24.6" width="20.7" height="65.4" fill="#22304A" /><rect x="476.7" y="28.7" width="20.7" height="61.3" fill="#22304A" /><rect x="498.3" y="44.8" width="20.7" height="45.2" fill="#22304A" /><rect x="520.0" y="28.2" width="20.7" height="61.8" fill="#22304A" /><rect x="541.7" y="34.6" width="20.7" height="55.4" fill="#22304A" /><rect x="563.3" y="23.5" width="20.7" height="66.5" fill="#22304A" /><rect x="585.0" y="29.6" width="20.7" height="60.4" fill="#22304A" /><rect x="606.7" y="38.3" width="20.7" height="51.7" fill="#22304A" /><rect x="628.3" y="24.3" width="20.7" height="65.7" fill="#22304A" /><rect x="650.0" y="38.4" width="20.7" height="51.6" fill="#22304A" /><rect x="671.7" y="49.8" width="20.7" height="40.2" fill="#22304A" /><rect x="693.3" y="25.6" width="20.7" height="64.4" fill="#22304A" /><rect x="715.0" y="35.1" width="20.7" height="54.9" fill="#22304A" /><rect x="736.7" y="13.0" width="20.7" height="77.0" fill="#22304A" /><rect x="758.3" y="48.2" width="20.7" height="41.8" fill="#22304A" /><rect x="780.0" y="43.3" width="20.7" height="46.7" fill="#22304A" /><rect x="801.7" y="40.3" width="20.7" height="49.7" fill="#22304A" /><rect x="823.3" y="44.6" width="20.7" height="45.4" fill="#22304A" /><rect x="845.0" y="29.8" width="20.7" height="60.2" fill="#22304A" /><rect x="866.7" y="10.0" width="20.7" height="80.0" fill="#22304A" /><rect x="888.3" y="27.1" width="20.7" height="62.9" fill="#22304A" /><rect x="910.0" y="32.7" width="20.7" height="57.3" fill="#22304A" /><rect x="931.7" y="41.3" width="20.7" height="48.7" fill="#22304A" /><rect x="953.3" y="35.1" width="20.7" height="54.9" fill="#22304A" /><rect x="975.0" y="34.8" width="20.7" height="55.2" fill="#22304A" /><rect x="996.7" y="22.2" width="20.7" height="67.8" fill="#22304A" /><rect x="1018.3" y="42.3" width="20.7" height="47.7" fill="#22304A" /><line x1="451.4" y1="0" x2="451.4" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="451.4" cy="4" r="3" fill="#F2A93B" /><line x1="130.0" y1="0" x2="130.0" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="130.0" cy="4" r="3" fill="#F2A93B" /><line x1="729.4" y1="0" x2="729.4" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="729.4" cy="4" r="3" fill="#F2A93B" /><line x1="866.7" y1="0" x2="866.7" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="866.7" cy="4" r="3" fill="#F2A93B" /><line x1="303.3" y1="0" x2="303.3" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="303.3" cy="4" r="3" fill="#F2A93B" /><line x1="577.8" y1="0" x2="577.8" y2="90" stroke="#F2A93B" stroke-width="1.5" stroke-dasharray="2,2" /><circle cx="577.8" cy="4" r="3" fill="#F2A93B" /></svg>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">EVENT LEDGER</div>
+  <div class="panel">
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Segment</th>
+          <th>Root cause</th>
+          <th>Action taken</th>
+          <th>Tx</th>
+          <th>At risk</th>
+          <th>Recovered</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="mono">debit_card</td>
+          <td class="mono">AXIS</td>
+          <td>issuer decline spike</td>
+          <td>suggest alternate method</td>
+          <td class="num">10</td>
+          <td class="num">Rs.260,016</td>
+          <td class="num accent-green">Rs.111,945</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:30%; background:#FF6B6B;"></div></div>
+            <span class="bar-pct">30%</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="mono">upi</td>
+          <td class="mono">HDFC</td>
+          <td>bank downtime</td>
+          <td>delayed retry same route</td>
+          <td class="num">16</td>
+          <td class="num">Rs.369,218</td>
+          <td class="num accent-green">Rs.216,821</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:56%; background:#F2A93B;"></div></div>
+            <span class="bar-pct">56%</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="mono">upi</td>
+          <td class="mono">SBI</td>
+          <td>bank downtime</td>
+          <td>delayed retry same route</td>
+          <td class="num">13</td>
+          <td class="num">Rs.232,896</td>
+          <td class="num accent-green">Rs.150,332</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:62%; background:#F2A93B;"></div></div>
+            <span class="bar-pct">62%</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="mono">wallet</td>
+          <td class="mono">ICICI</td>
+          <td>unclear mixed signals</td>
+          <td>escalate to ops</td>
+          <td class="num">22</td>
+          <td class="num">Rs.490,947</td>
+          <td class="num accent-dim">escalated &middot; no auto-action</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:0%; background:#8B96AC;"></div></div>
+            <span class="bar-pct">0%</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="mono">credit_card</td>
+          <td class="mono">gw_primary</td>
+          <td>gateway timeout</td>
+          <td>reroute alternate gateway</td>
+          <td class="num">14</td>
+          <td class="num">Rs.274,799</td>
+          <td class="num accent-green">Rs.274,799</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:100%; background:#35C48D;"></div></div>
+            <span class="bar-pct">100%</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="mono">netbanking</td>
+          <td class="mono">gw_secondary</td>
+          <td>network issue</td>
+          <td>reroute alternate gateway</td>
+          <td class="num">29</td>
+          <td class="num">Rs.555,279</td>
+          <td class="num accent-green">Rs.555,279</td>
+          <td class="bar-cell">
+            <div class="bar-track"><div class="bar-fill" style="width:100%; background:#35C48D;"></div></div>
+            <span class="bar-pct">100%</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  Generated from outputs/dashboard_data.json &middot; full audit trail: outputs/recovery_audit_log.csv
+</footer>
+
+</body>
+</html>

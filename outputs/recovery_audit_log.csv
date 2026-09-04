@@ -1,0 +1,176 @@
+tx_id,segment_value,payment_method,amount,root_cause,diagnosis_confidence,action,attempt_number,attempt_outcome,recovered,recovered_amount,reasoning
+18733,AXIS,debit_card,38288.44,issuer_decline_spike,1.0,suggest_alternate_method,1,recovered,True,38288.44,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> succeeded.
+18775,AXIS,debit_card,31533.3,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18775,AXIS,debit_card,31533.3,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18789,AXIS,debit_card,29562.14,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18789,AXIS,debit_card,29562.14,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18876,AXIS,debit_card,24028.09,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18876,AXIS,debit_card,24028.09,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18947,AXIS,debit_card,43249.88,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18947,AXIS,debit_card,43249.88,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18953,AXIS,debit_card,14912.81,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18953,AXIS,debit_card,14912.81,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18978,AXIS,debit_card,3581.8,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+18978,AXIS,debit_card,3581.8,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+18990,AXIS,debit_card,42871.67,issuer_decline_spike,1.0,suggest_alternate_method,1,recovered,True,42871.67,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> succeeded.
+19029,AXIS,debit_card,30784.97,issuer_decline_spike,1.0,suggest_alternate_method,1,recovered,True,30784.97,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> succeeded.
+19114,AXIS,debit_card,1203.24,issuer_decline_spike,1.0,suggest_alternate_method,1,failed,False,0.0,Attempt 1/1 via 'suggest_alternate_method' (success prob 35% at this point in time) -> failed.
+19114,AXIS,debit_card,1203.24,issuer_decline_spike,1.0,suggest_alternate_method,2,escalated_after_max_retries,False,0.0,Exhausted 1 attempt(s) via 'suggest_alternate_method' without success -- escalated to ops queue rather than retrying indefinitely.
+5419,HDFC,upi,24565.89,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5419,HDFC,upi,24565.89,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5419,HDFC,upi,24565.89,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5419,HDFC,upi,24565.89,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5447,HDFC,upi,6818.92,bank_downtime,1.0,delayed_retry_same_route,1,recovered,True,6818.92,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> succeeded.
+5450,HDFC,upi,11773.57,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5450,HDFC,upi,11773.57,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5450,HDFC,upi,11773.57,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5450,HDFC,upi,11773.57,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5490,HDFC,upi,28206.72,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5490,HDFC,upi,28206.72,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5490,HDFC,upi,28206.72,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,28206.72,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> succeeded.
+5505,HDFC,upi,33750.46,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5505,HDFC,upi,33750.46,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5505,HDFC,upi,33750.46,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5505,HDFC,upi,33750.46,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5519,HDFC,upi,36737.8,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5519,HDFC,upi,36737.8,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5519,HDFC,upi,36737.8,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5519,HDFC,upi,36737.8,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5533,HDFC,upi,14991.87,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5533,HDFC,upi,14991.87,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5533,HDFC,upi,14991.87,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5533,HDFC,upi,14991.87,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5615,HDFC,upi,4989.4,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5615,HDFC,upi,4989.4,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5615,HDFC,upi,4989.4,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5615,HDFC,upi,4989.4,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5664,HDFC,upi,25587.6,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5664,HDFC,upi,25587.6,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5664,HDFC,upi,25587.6,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5664,HDFC,upi,25587.6,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+5734,HDFC,upi,30938.99,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5734,HDFC,upi,30938.99,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5734,HDFC,upi,30938.99,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,30938.99,Attempt 3/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5735,HDFC,upi,24979.15,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5735,HDFC,upi,24979.15,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5735,HDFC,upi,24979.15,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,24979.15,Attempt 3/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5827,HDFC,upi,43337.71,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5827,HDFC,upi,43337.71,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,43337.71,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5846,HDFC,upi,26839.16,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5846,HDFC,upi,26839.16,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,26839.16,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5885,HDFC,upi,19925.64,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+5885,HDFC,upi,19925.64,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,19925.64,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5950,HDFC,upi,11801.53,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> failed.
+5950,HDFC,upi,11801.53,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,11801.53,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+5967,HDFC,upi,23973.41,bank_downtime,1.0,delayed_retry_same_route,1,recovered,True,23973.41,Attempt 1/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+30416,SBI,upi,8983.54,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30416,SBI,upi,8983.54,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30416,SBI,upi,8983.54,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30416,SBI,upi,8983.54,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+30455,SBI,upi,5280.61,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30455,SBI,upi,5280.61,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30455,SBI,upi,5280.61,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,5280.61,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> succeeded.
+30474,SBI,upi,14507.65,bank_downtime,1.0,delayed_retry_same_route,1,recovered,True,14507.65,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> succeeded.
+30505,SBI,upi,10510.97,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30505,SBI,upi,10510.97,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30505,SBI,upi,10510.97,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30505,SBI,upi,10510.97,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+30507,SBI,upi,10831.12,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30507,SBI,upi,10831.12,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30507,SBI,upi,10831.12,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,10831.12,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> succeeded.
+30599,SBI,upi,35696.94,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30599,SBI,upi,35696.94,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30599,SBI,upi,35696.94,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30599,SBI,upi,35696.94,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+30644,SBI,upi,10566.95,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30644,SBI,upi,10566.95,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30644,SBI,upi,10566.95,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30644,SBI,upi,10566.95,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+30665,SBI,upi,16806.46,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30665,SBI,upi,16806.46,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30665,SBI,upi,16806.46,bank_downtime,1.0,delayed_retry_same_route,3,failed,False,0.0,Attempt 3/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30665,SBI,upi,16806.46,bank_downtime,1.0,delayed_retry_same_route,4,escalated_after_max_retries,False,0.0,Exhausted 3 attempt(s) via 'delayed_retry_same_route' without success -- escalated to ops queue rather than retrying indefinitely.
+30757,SBI,upi,529.2,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30757,SBI,upi,529.2,bank_downtime,1.0,delayed_retry_same_route,2,failed,False,0.0,Attempt 2/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30757,SBI,upi,529.2,bank_downtime,1.0,delayed_retry_same_route,3,recovered,True,529.2,Attempt 3/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+30770,SBI,upi,23158.4,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30770,SBI,upi,23158.4,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,23158.4,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+30774,SBI,upi,17419.43,bank_downtime,1.0,delayed_retry_same_route,1,failed,False,0.0,Attempt 1/3 via 'delayed_retry_same_route' (success prob 10% at this point in time) -> failed.
+30774,SBI,upi,17419.43,bank_downtime,1.0,delayed_retry_same_route,2,recovered,True,17419.43,Attempt 2/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+30924,SBI,upi,34939.84,bank_downtime,1.0,delayed_retry_same_route,1,recovered,True,34939.84,Attempt 1/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+30932,SBI,upi,43665.32,bank_downtime,1.0,delayed_retry_same_route,1,recovered,True,43665.32,Attempt 1/3 via 'delayed_retry_same_route' (success prob 78% at this point in time) -> succeeded.
+36195,ICICI,wallet,42699.31,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36218,ICICI,wallet,3695.3,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36332,ICICI,wallet,9245.56,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36348,ICICI,wallet,39931.29,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36354,ICICI,wallet,8456.2,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36435,ICICI,wallet,38746.67,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36437,ICICI,wallet,16574.89,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36502,ICICI,wallet,6082.84,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36506,ICICI,wallet,20603.52,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36538,ICICI,wallet,22563.05,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36621,ICICI,wallet,36154.32,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36640,ICICI,wallet,25082.92,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36740,ICICI,wallet,25095.81,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36819,ICICI,wallet,37485.43,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36831,ICICI,wallet,10889.1,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36859,ICICI,wallet,37005.95,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36860,ICICI,wallet,20267.29,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36881,ICICI,wallet,35953.9,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36896,ICICI,wallet,5911.46,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36950,ICICI,wallet,28295.44,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+36993,ICICI,wallet,17740.93,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+37016,ICICI,wallet,2465.96,unclear_mixed_signals,0.36,escalate_to_ops,0,escalated,False,0.0,Diagnosis confidence 36% below auto-action threshold (50%)
+12673,gw_primary,credit_card,9944.19,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,9944.19,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12712,gw_primary,credit_card,20609.1,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,20609.1,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12785,gw_primary,credit_card,3542.33,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,3542.33,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12813,gw_primary,credit_card,1071.95,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,1071.95,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12823,gw_primary,credit_card,917.52,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,917.52,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12838,gw_primary,credit_card,9671.85,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,9671.85,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12900,gw_primary,credit_card,44183.11,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,44183.11,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12948,gw_primary,credit_card,38002.07,gateway_timeout,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+12948,gw_primary,credit_card,38002.07,gateway_timeout,1.0,reroute_alternate_gateway,2,recovered,True,38002.07,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12957,gw_primary,credit_card,13515.28,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,13515.28,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12963,gw_primary,credit_card,19030.4,gateway_timeout,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+12963,gw_primary,credit_card,19030.4,gateway_timeout,1.0,reroute_alternate_gateway,2,recovered,True,19030.4,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12966,gw_primary,credit_card,34936.13,gateway_timeout,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+12966,gw_primary,credit_card,34936.13,gateway_timeout,1.0,reroute_alternate_gateway,2,recovered,True,34936.13,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+12990,gw_primary,credit_card,44683.53,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,44683.53,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+13003,gw_primary,credit_card,9706.41,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,9706.41,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+13010,gw_primary,credit_card,24984.94,gateway_timeout,1.0,reroute_alternate_gateway,1,recovered,True,24984.94,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+23976,gw_secondary,netbanking,11310.95,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,11310.95,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+23977,gw_secondary,netbanking,9129.81,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,9129.81,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+23999,gw_secondary,netbanking,2786.96,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,2786.96,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24077,gw_secondary,netbanking,11133.2,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,11133.2,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24105,gw_secondary,netbanking,845.35,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,845.35,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24116,gw_secondary,netbanking,43281.29,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,43281.29,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24162,gw_secondary,netbanking,35580.87,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,35580.87,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24176,gw_secondary,netbanking,18744.38,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,18744.38,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24180,gw_secondary,netbanking,20171.6,network_issue,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24180,gw_secondary,netbanking,20171.6,network_issue,1.0,reroute_alternate_gateway,2,recovered,True,20171.6,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24183,gw_secondary,netbanking,37427.41,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,37427.41,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24218,gw_secondary,netbanking,43130.05,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,43130.05,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24250,gw_secondary,netbanking,38690.38,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,38690.38,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24253,gw_secondary,netbanking,7325.9,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,7325.9,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24255,gw_secondary,netbanking,17687.7,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,17687.7,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24292,gw_secondary,netbanking,1833.95,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,1833.95,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24308,gw_secondary,netbanking,795.4,network_issue,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24308,gw_secondary,netbanking,795.4,network_issue,1.0,reroute_alternate_gateway,2,failed,False,0.0,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24308,gw_secondary,netbanking,795.4,network_issue,1.0,reroute_alternate_gateway,3,recovered,True,795.4,Attempt 3/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24311,gw_secondary,netbanking,18946.2,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,18946.2,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24334,gw_secondary,netbanking,5648.53,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,5648.53,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24342,gw_secondary,netbanking,40185.5,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,40185.5,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24343,gw_secondary,netbanking,18289.6,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,18289.6,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24359,gw_secondary,netbanking,6381.79,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,6381.79,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24372,gw_secondary,netbanking,10066.04,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,10066.04,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24426,gw_secondary,netbanking,39017.38,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,39017.38,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24436,gw_secondary,netbanking,21254.94,network_issue,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24436,gw_secondary,netbanking,21254.94,network_issue,1.0,reroute_alternate_gateway,2,recovered,True,21254.94,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24467,gw_secondary,netbanking,6969.26,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,6969.26,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24503,gw_secondary,netbanking,25283.39,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,25283.39,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24510,gw_secondary,netbanking,8948.14,network_issue,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24510,gw_secondary,netbanking,8948.14,network_issue,1.0,reroute_alternate_gateway,2,recovered,True,8948.14,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24526,gw_secondary,netbanking,24608.03,network_issue,1.0,reroute_alternate_gateway,1,recovered,True,24608.03,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.
+24554,gw_secondary,netbanking,29804.99,network_issue,1.0,reroute_alternate_gateway,1,failed,False,0.0,Attempt 1/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24554,gw_secondary,netbanking,29804.99,network_issue,1.0,reroute_alternate_gateway,2,failed,False,0.0,Attempt 2/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> failed.
+24554,gw_secondary,netbanking,29804.99,network_issue,1.0,reroute_alternate_gateway,3,recovered,True,29804.99,Attempt 3/3 via 'reroute_alternate_gateway' (success prob 82% at this point in time) -> succeeded.

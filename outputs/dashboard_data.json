@@ -1,0 +1,329 @@
+{
+  "scorecard": {
+    "detection": {
+      "real_events_planted": 6,
+      "events_detected": 6,
+      "events_correctly_matched": 6,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "diagnosis": {
+      "events_diagnosed": 6,
+      "correct_diagnoses": 6,
+      "diagnosis_accuracy": 1.0,
+      "avg_confidence": 0.893
+    },
+    "recovery": {
+      "total_amount_at_risk": 2183155.53,
+      "total_amount_recovered": 1309175.68,
+      "overall_recovery_rate": 0.6,
+      "n_events_handled": 6
+    }
+  },
+  "timeline": [
+    {
+      "minute": 0,
+      "fail_rate": 0.0525
+    },
+    {
+      "minute": 30,
+      "fail_rate": 0.0408
+    },
+    {
+      "minute": 60,
+      "fail_rate": 0.0553
+    },
+    {
+      "minute": 90,
+      "fail_rate": 0.0478
+    },
+    {
+      "minute": 120,
+      "fail_rate": 0.0452
+    },
+    {
+      "minute": 150,
+      "fail_rate": 0.0539
+    },
+    {
+      "minute": 180,
+      "fail_rate": 0.0657
+    },
+    {
+      "minute": 210,
+      "fail_rate": 0.0392
+    },
+    {
+      "minute": 240,
+      "fail_rate": 0.0473
+    },
+    {
+      "minute": 270,
+      "fail_rate": 0.0501
+    },
+    {
+      "minute": 300,
+      "fail_rate": 0.0545
+    },
+    {
+      "minute": 330,
+      "fail_rate": 0.0467
+    },
+    {
+      "minute": 360,
+      "fail_rate": 0.0482
+    },
+    {
+      "minute": 390,
+      "fail_rate": 0.0418
+    },
+    {
+      "minute": 420,
+      "fail_rate": 0.0606
+    },
+    {
+      "minute": 450,
+      "fail_rate": 0.0556
+    },
+    {
+      "minute": 480,
+      "fail_rate": 0.0495
+    },
+    {
+      "minute": 510,
+      "fail_rate": 0.0541
+    },
+    {
+      "minute": 540,
+      "fail_rate": 0.0406
+    },
+    {
+      "minute": 570,
+      "fail_rate": 0.0635
+    },
+    {
+      "minute": 600,
+      "fail_rate": 0.0576
+    },
+    {
+      "minute": 630,
+      "fail_rate": 0.0616
+    },
+    {
+      "minute": 660,
+      "fail_rate": 0.0578
+    },
+    {
+      "minute": 690,
+      "fail_rate": 0.0426
+    },
+    {
+      "minute": 720,
+      "fail_rate": 0.0582
+    },
+    {
+      "minute": 750,
+      "fail_rate": 0.0522
+    },
+    {
+      "minute": 780,
+      "fail_rate": 0.0627
+    },
+    {
+      "minute": 810,
+      "fail_rate": 0.0569
+    },
+    {
+      "minute": 840,
+      "fail_rate": 0.0487
+    },
+    {
+      "minute": 870,
+      "fail_rate": 0.0619
+    },
+    {
+      "minute": 900,
+      "fail_rate": 0.0486
+    },
+    {
+      "minute": 930,
+      "fail_rate": 0.0379
+    },
+    {
+      "minute": 960,
+      "fail_rate": 0.0607
+    },
+    {
+      "minute": 990,
+      "fail_rate": 0.0517
+    },
+    {
+      "minute": 1020,
+      "fail_rate": 0.0726
+    },
+    {
+      "minute": 1050,
+      "fail_rate": 0.0394
+    },
+    {
+      "minute": 1080,
+      "fail_rate": 0.044
+    },
+    {
+      "minute": 1110,
+      "fail_rate": 0.0468
+    },
+    {
+      "minute": 1140,
+      "fail_rate": 0.0428
+    },
+    {
+      "minute": 1170,
+      "fail_rate": 0.0567
+    },
+    {
+      "minute": 1200,
+      "fail_rate": 0.0754
+    },
+    {
+      "minute": 1230,
+      "fail_rate": 0.0593
+    },
+    {
+      "minute": 1260,
+      "fail_rate": 0.054
+    },
+    {
+      "minute": 1290,
+      "fail_rate": 0.0459
+    },
+    {
+      "minute": 1320,
+      "fail_rate": 0.0517
+    },
+    {
+      "minute": 1350,
+      "fail_rate": 0.052
+    },
+    {
+      "minute": 1380,
+      "fail_rate": 0.0639
+    },
+    {
+      "minute": 1410,
+      "fail_rate": 0.045
+    }
+  ],
+  "events": [
+    {
+      "payment_method": "debit_card",
+      "segment_value": "AXIS",
+      "segment_type": "bank",
+      "window_start_min": 625,
+      "window_end_min": 640
+    },
+    {
+      "payment_method": "upi",
+      "segment_value": "HDFC",
+      "segment_type": "bank",
+      "window_start_min": 180,
+      "window_end_min": 200
+    },
+    {
+      "payment_method": "upi",
+      "segment_value": "SBI",
+      "segment_type": "bank",
+      "window_start_min": 1010,
+      "window_end_min": 1030
+    },
+    {
+      "payment_method": "wallet",
+      "segment_value": "ICICI",
+      "segment_type": "bank",
+      "window_start_min": 1200,
+      "window_end_min": 1230
+    },
+    {
+      "payment_method": "credit_card",
+      "segment_value": "gw_primary",
+      "segment_type": "gateway",
+      "window_start_min": 420,
+      "window_end_min": 435
+    },
+    {
+      "payment_method": "netbanking",
+      "segment_value": "gw_secondary",
+      "segment_type": "gateway",
+      "window_start_min": 800,
+      "window_end_min": 820
+    }
+  ],
+  "ledger": [
+    {
+      "payment_method": "debit_card",
+      "segment_value": "AXIS",
+      "root_cause": "issuer_decline_spike",
+      "action": "suggest_alternate_method",
+      "n_transactions": 10,
+      "n_recovered": 3,
+      "amount_at_risk": 260016.33999999997,
+      "amount_recovered": 111945.08,
+      "recovery_rate": 0.3
+    },
+    {
+      "payment_method": "upi",
+      "segment_value": "HDFC",
+      "root_cause": "bank_downtime",
+      "action": "delayed_retry_same_route",
+      "n_transactions": 16,
+      "n_recovered": 9,
+      "amount_at_risk": 369217.81999999995,
+      "amount_recovered": 216821.23,
+      "recovery_rate": 0.562
+    },
+    {
+      "payment_method": "upi",
+      "segment_value": "SBI",
+      "root_cause": "bank_downtime",
+      "action": "delayed_retry_same_route",
+      "n_transactions": 13,
+      "n_recovered": 8,
+      "amount_at_risk": 232896.43000000002,
+      "amount_recovered": 150331.57,
+      "recovery_rate": 0.615
+    },
+    {
+      "payment_method": "wallet",
+      "segment_value": "ICICI",
+      "root_cause": "unclear_mixed_signals",
+      "action": "escalate_to_ops",
+      "n_transactions": 22,
+      "n_recovered": 0,
+      "amount_at_risk": 490947.1400000001,
+      "amount_recovered": 0.0,
+      "recovery_rate": 0.0
+    },
+    {
+      "payment_method": "credit_card",
+      "segment_value": "gw_primary",
+      "root_cause": "gateway_timeout",
+      "action": "reroute_alternate_gateway",
+      "n_transactions": 14,
+      "n_recovered": 14,
+      "amount_at_risk": 274798.81,
+      "amount_recovered": 274798.81,
+      "recovery_rate": 1.0
+    },
+    {
+      "payment_method": "netbanking",
+      "segment_value": "gw_secondary",
+      "root_cause": "network_issue",
+      "action": "reroute_alternate_gateway",
+      "n_transactions": 29,
+      "n_recovered": 29,
+      "amount_at_risk": 555278.99,
+      "amount_recovered": 555278.99,
+      "recovery_rate": 1.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "n_events": 6,
+  "total_amount_at_risk": 2183155.53,
+  "total_amount_recovered": 1309175.68,
+  "overall_recovery_rate": 0.6,
+  "events": [
+    {
+      "segment_value": "AXIS",
+      "payment_method": "debit_card",
+      "root_cause": "issuer_decline_spike",
+      "action": "suggest_alternate_method",
+      "n_transactions": 10,
+      "n_recovered": 3,
+      "amount_at_risk": 260016.33999999997,
+      "amount_recovered": 111945.08,
+      "recovery_rate": 0.3
+    },
+    {
+      "segment_value": "HDFC",
+      "payment_method": "upi",
+      "root_cause": "bank_downtime",
+      "action": "delayed_retry_same_route",
+      "n_transactions": 16,
+      "n_recovered": 9,
+      "amount_at_risk": 369217.81999999995,
+      "amount_recovered": 216821.23,
+      "recovery_rate": 0.562
+    },
+    {
+      "segment_value": "SBI",
+      "payment_method": "upi",
+      "root_cause": "bank_downtime",
+      "action": "delayed_retry_same_route",
+      "n_transactions": 13,
+      "n_recovered": 8,
+      "amount_at_risk": 232896.43000000002,
+      "amount_recovered": 150331.57,
+      "recovery_rate": 0.615
+    },
+    {
+      "segment_value": "ICICI",
+      "payment_method": "wallet",
+      "root_cause": "unclear_mixed_signals",
+      "action": "escalate_to_ops",
+      "n_transactions": 22,
+      "n_recovered": 0,
+      "amount_at_risk": 490947.1400000001,
+      "amount_recovered": 0.0,
+      "recovery_rate": 0.0
+    },
+    {
+      "segment_value": "gw_primary",
+      "payment_method": "credit_card",
+      "root_cause": "gateway_timeout",
+      "action": "reroute_alternate_gateway",
+      "n_transactions": 14,
+      "n_recovered": 14,
+      "amount_at_risk": 274798.81,
+      "amount_recovered": 274798.81,
+      "recovery_rate": 1.0
+    },
+    {
+      "segment_value": "gw_secondary",
+      "payment_method": "netbanking",
+      "root_cause": "network_issue",
+      "action": "reroute_alternate_gateway",
+      "n_transactions": 29,
+      "n_recovered": 29,
+      "amount_at_risk": 555278.99,
+      "amount_recovered": 555278.99,
+      "recovery_rate": 1.0
+    }
+  ]
+}
