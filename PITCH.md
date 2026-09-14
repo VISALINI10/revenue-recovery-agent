@@ -128,7 +128,7 @@ real money.
 
 **"Is this real money or simulated?"**
 Simulated — synthetic transaction data with injected ground-truth events,
-since we don't have access to live Razorpay transaction data. The recovery
+since we don't have access to a live payments platform's transaction data. The recovery
 success probabilities are calibrated to be directionally realistic (technical
 fixes recover well, human-dependent actions recover partially) but aren't
 measured from real-world outcomes.
