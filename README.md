@@ -1,6 +1,6 @@
 # Revenue Recovery Agent
-### Razorpay AI Buildathon 2026 — Track: AI Revenue Recovery
-**Problem statement:** Payment degradation → root cause → recovery action
+### TechCommons Hacks V2: Hacks to Inspire
+**An autonomous agent that detects payment failures, diagnoses why they happened, and recovers the lost revenue — automatically, safely, and with a full audit trail.**
 
 ---
 
@@ -17,6 +17,18 @@ This agent closes the loop automatically:
 **Detect** a degradation → **Diagnose** why it's happening → **Recover** the
 revenue with a bounded, explainable action → **Prove** it worked with a full
 audit trail.
+
+## Why this matters (impact)
+
+Payment failures are usually invisible until someone manually notices a dip in
+a dashboard — by which point the money is already gone and the cause is cold.
+This agent turns that into an automated, provable loop: any platform that
+processes online payments (a startup, a college fest ticketing system, a
+student marketplace app) loses a measurable slice of revenue to exactly this
+kind of silent failure. A system that catches it within minutes, explains why,
+and safely recovers what it can — while knowing when to defer to a human
+instead of guessing — is directly applicable anywhere payments happen, not
+just at a large payments company.
 
 ## Why this approach
 
